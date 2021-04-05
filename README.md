@@ -13,7 +13,7 @@
 
 * Run ``` "Update-Database" on the Package Manager Console ```
 
-* ``` Also for Transactions, you wil also need to Register a new Account -> Your Bank's Settlement and put the accountNumber in the "NetCoreBankSettlementAccount": "2842017209" in appsettings.json ```
+* ``` Also for Transactions, you wil also need to Register a new Account -> Your Bank's Settlement Account and put the accountNumber generated in the "NetCoreBankSettlementAccount": "2842017209" in appsettings.json ```
 
 * Run your code
 
