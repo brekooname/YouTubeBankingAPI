@@ -15,7 +15,7 @@ namespace YouTubeNetcoreBankAPI.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string AccountName { get; set; }
+        public string AccountName => FirstName.ToUpper() + " " + LastName.ToUpper();
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public decimal CurrentAccountBalance { get; set; }
@@ -39,7 +39,7 @@ namespace YouTubeNetcoreBankAPI.Models
         {
             AccountNumberGenerated = Convert.ToString((long) Math.Floor(rand.NextDouble() * 9_000_000_000L + 1_000_000_000L)); // we did 9_000_000_000 so we could get a 10-digit random number
             //also AccountName property = FirstName+LastName
-            AccountName = $"{FirstName} {LastName}"; //e.g John Doe
+            //AccountName = $"{FirstName} {LastName}"; //e.g John Doe
         }
     }
 
